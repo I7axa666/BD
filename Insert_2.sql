@@ -41,9 +41,6 @@ INSERT INTO albums(album_name, album_year)
 ('Альбом Марли', 2021),
 ('Альбом Зыкиной', 2022);
 
-ALTER TABLE music_service_new.perfoprmeralbums 
-RENAME TO performeralbums;
-
 INSERT INTO performeralbums(performer_id, albums_id)
  VALUES 
 (1, 5),
@@ -56,9 +53,6 @@ INSERT INTO performeralbums(performer_id, albums_id)
 (8, 8),
 (4, 5);
 
-ALTER TABLE tracks
-RENAME abums_id TO albums_id;
-
 INSERT INTO tracks(track_name, duration, albums_id)
  VALUES 
 ('Мой Кипелов', 231, 5),
@@ -68,7 +62,14 @@ INSERT INTO tracks(track_name, duration, albums_id)
 ('МойМой', 600, 9),
 ('Wat a Wonderful World', 36, 10),
 ('Sun is shining', 512, 11),
-('Trach183', 999, 12);
+('Trach183', 999, 12),
+('Track', 123, 5),
+('Track128', 200, NUll),
+('Track128', 200, NULL),
+('Алешка', 180, 7),
+('Роза', 250, 8),
+('Panch', 300, 9),
+('WTF', 99, 10);
 
 INSERT INTO collections(coll_name, coll_year)
  VALUES 
@@ -76,7 +77,12 @@ INSERT INTO collections(coll_name, coll_year)
 ('Коллекция Децл', 2005),
 ('Коллекция Жуков', 2018),
 ('Коллекция Басков', 2020),
-('Коллекция остальное', 2019);
+('Коллекция остальное', 2019),
+('Прочее', 2023),
+('Закат', 2019),
+('Коллекция Осень', 2019),
+('Прочее', 2023),
+('Закат', 2019);
 
 INSERT INTO trackcollection(track_id, collection_id)
  VALUES 
